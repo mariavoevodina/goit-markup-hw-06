@@ -15,8 +15,7 @@
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<link
-		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -55,53 +54,79 @@
 			<div class="overlay">
 				<div class="container hero-box">
 					<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-					
-          
-          <button data-modal-open type="button" class="button primary">Заказать услугу</button>
 
-					<div class="backdrop is-hidden"data-modal>
+
+					<button data-modal-open type="button" class="button primary">Заказать услугу</button>
+
+					<div class="backdrop is-hidden" data-modal>
 						<div class="modal">
-              
-          <form class="form">
-            
-          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-          
-          <div class="form-field">
-          <label class="form-label" for="username">Имя</label>
-          <input class="form-input" type="text" name="username" id="username"/></div>
-           
-          <div class="form-field">
-          <label class="form-label" for="phone-number">Телефон</label>
-          <input class="form-input" type="tel" name="phone_number" id="phone-number"/></div>
 
-          <div class="form-field">
-          <label class="form-label" for="user-email">Почта</label>
-          <input class="form-input" type="email" name="user-email" id="user-email" /></div>
 
-          <div class="form-field">
-          <label class="form-label" for="comments">Комментарий
-          </label>
-          <textarea class="comments" name="comments" id="comments"  rows="5" placeholder="Введите текст"></textarea>
-        </div>
-          
-          
-          <div class="checkbox">
-          <input type="checkbox" name="policy" id="policy">
-          <label class="checkbox-label" for="policy">Соглашаюсь с рассылкой и принимаю  <a href="">Условия договора</a></label></div>
-         
-         <button class="button-submit"   type="submit">Отправить</button>
-          
-        </form>
-
-          <button data-modal-close type="button"
-              class="button-close">
-                <svg class="close-icon" width="11" height="11">
-									<use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+							<button data-modal-close type="button" class="button-close">
+								<svg class="close-icon" width="11" height="11">
+									<use href="./images/icons.svg#icon-close-black-18dp-2-1">
+									</use>
 								</svg></button>
-							
+
+
+							<form class="form" autocomplete="off">
+
+								<p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+
+								<div class="form-field">
+
+
+									<input class="form-input" type="text" name="username" id="username" />
+									<label class="form-label" for="username">Имя</label>
+									<svg class="form-icon" width="12" height="12">
+										<use href="./images/icons.svg#icon-person-black"></use>
+									</svg>
+								</div>
+
+								<div class="form-field">
+
+									<input class="form-input" type="tel" name="phone_number" id="phone-number" />
+									<label class="form-label" for="phone-number">Телефон</label>
+									<svg class="form-icon" width="12" height="12">
+										<use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+									</svg>
+								</div>
+
+								<div class="form-field">
+
+									<input class="form-input" type="email" name="user-email" id="user-email" />
+									<label class="form-label" for="user-email">Почта</label>
+									<svg class="form-icon" width="12" height="12">
+										<use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+									</svg>
+								</div>
+
+								<div class="form-field">
+
+									<textarea class="form-input" name="comments" id="comments" rows="5"
+										placeholder="Введите текст"></textarea>
+									<label class="form-label" for="comments">Комментарий
+									</label>
+								</div>
+
+
+								<div class="checkbox">
+
+									<label class="checkbox-label">
+										<input type="checkbox" class="checkbox-input">
+										<span class="checkbox-icon"></span>
+										Соглашаюсь с рассылкой и принимаю
+										<a class="agreement-link" href="">&nbsp;Условия договора</a>
+									</label>
+								</div>
+
+								<button class="button-submit" type="submit">Отправить</button>
+
+							</form>
+
 						</div>
 					</div>
-        </div>
+				</div>
 			</div>
 		</section>
 
@@ -404,12 +429,12 @@
 			<div class="footer-info">
 				<div class="address">
 					<a class="logo link logo-footer" href="">Web<span>Studio</span></a>
-					<address>
+					<address class="footer-address">
 						<p class="address-name">г. Киев, пр-т Леси Украинки, 26</p>
 
 						<ul class="list">
-							<li class="footer-item"><a href="mailto:info@devstudio.com"
-									class="footer-link">info@devstudio.com</a></li>
+							<li class="footer-item"><a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a>
+							</li>
 							<li class="footer-item"><a href="tel:+380961111111" class="footer-link">+38 096 111 11
 									11</a>
 							</li>
@@ -455,16 +480,22 @@
 						</li>
 					</ul>
 				</div>
-        
-        <form class="footer-form">
-          <p class="footer-form-title">Подпишитесь на рассылку</p>
-          <input type="email" name="footer-email" id="footer-email" placeholder="E-mail">
-          <button class="button-subscr" type="submit">Подписаться</button>
-          </form>
-			  
-        </div>
 
-     </div>
+				<form class="footer-form">
+					<p class="footer-form-title">Подпишитесь на рассылку</p>
+					<div class="footer-items">
+						<input class="white-placeholder" type="email" name="footer-email" id="footer-email" placeholder="E-mail">
+						<button class="button-subscr" type="submit">Подписаться
+							<svg class="icon-send" width="24" height="24">
+								<use href="./images/icons.svg#icon-icon-send"></use>
+							</svg></button>
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
 	</footer>
 
 	<script src="./js/modal.js"></script>
